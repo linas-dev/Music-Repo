@@ -1,0 +1,108 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Musical Dojo";
+}
+
+
+<div class="container">
+
+    <div class="t-txt pt-3 pb-2 f-cont">
+        <span> 
+            <img  
+                 class="mt-1"
+                 src="~/images/1.jpg" 
+                 width="30px"
+                 height="30px"
+                 alt="Alternate Text" />
+        </span>
+        <h2 class="ml-5 #ec407a">Musical Dojo</h2>
+    </div>
+
+    <div class="pt-2 pb-2">
+        <h2 class="pb-3">My fav sonsgs... <span class="auto-input t-txt" ></span></h2>
+    </div>
+
+    <div class="songs-container">
+        <div>
+            <div>
+                <iframe 
+                        width="400px"
+                        height="200px"
+                        src="https://www.youtube.com/embed/jvUbhRuBgUw" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+
+                </iframe>
+            </div>
+            <div class="ml-5">
+                <h3>Play - Alan Walker, K-391, Tungevaag & Walkers ft. Sapphire & Mangoo </h3>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <iframe 
+                        width="400px"
+                        height="200px"
+                        src="https://www.youtube.com/embed/eLYS88I2dK0" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+
+                </iframe>
+            </div>
+            <div class="ml-5">
+                <h3>Alan Walker ft. Gavin James - Tired (Kygo Remix)</h3>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <iframe 
+                        width="400px"
+                        height="200px" 
+                        src="https://www.youtube.com/embed/_tNU6dpjIyM" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+
+                </iframe>
+            </div>
+            <div class="ml-5">
+                <h3>The Chainsmokers & Coldplay - Something Just Like This</h3>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        made by <span class="linas"><a href="https://github.com/linas-dev">linasdev</a></span>
+    </footer>
+
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+    let typed = new Typed(".auto-input", {
+        strings: [
+            "Play - Alan Walker",
+            "Alan Walker ft. Gavin James - Tired",
+            "The Chainsmokers - Something Just Like This"
+        ],
+        typeSpeed: 70,
+        backSpeed: 70,
+        startDelay: 1000,
+        backDelay: 700,
+        fadeOut: true,
+        fadeOutClass: 'typed-fade-out',
+        fadeOutDelay: 500,
+        showCursor: false,
+        loop: true
+    })
+
+
+</script>
+
